@@ -1,0 +1,21 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  @include minWidth($sm) {
+    width: 80%;
+  }
+
+  &.expanded-mobile {
+    @include maxWidth($sm) {
+      width: 100%;
+    }
+  }
+
+  &.expanded-tablet {
+    @include maxWidth($lg) {
+      width: 100%;
+    }
+  }
+}

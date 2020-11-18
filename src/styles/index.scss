@@ -1,0 +1,9 @@
+@import "./structure/variables";
+@import "./structure/reset";
+@import "./structure/typography";
+@import "./utils/mixins";
+@import "./structure/grid-system";
+
+// COMPONENTS
+@import "./components/header";
+@import "./components/profile";

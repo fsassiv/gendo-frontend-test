@@ -1,0 +1,36 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include minWidth($lg) {
+      flex-direction: column;
+    }
+    &-avatar {
+      object-fit: cover;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      @include minWidth($lg) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &-data {
+      margin-left: 10px;
+      @include minWidth($lg) {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  @include minWidth($lg) {
+    flex-direction: row;
+  }
+}

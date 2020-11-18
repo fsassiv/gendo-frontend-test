@@ -1,0 +1,23 @@
+.header {
+  background-color: $slate-grey-two;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    color: white;
+    &-container {
+      margin-left: 8px;
+    }
+  }
+
+  &__icon {
+    path {
+      fill: white;
+    }
+  }
+}
