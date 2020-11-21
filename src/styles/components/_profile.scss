@@ -1,13 +1,17 @@
 .profile {
   display: flex;
   flex-direction: column;
-
+  @include minWidth($lg) {
+    padding-top: 20px;
+    flex-direction: row;
+  }
   &__info {
     display: flex;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     @include minWidth($lg) {
+      flex-basis: 100px;
       flex-direction: column;
     }
     &-avatar {
@@ -30,7 +34,10 @@
     }
   }
 
-  @include minWidth($lg) {
-    flex-direction: row;
+  &__content {
+    @include minWidth($lg) {
+      margin-left: 5%;
+      flex-basis: 100%;
+    }
   }
 }

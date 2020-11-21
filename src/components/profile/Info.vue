@@ -2,7 +2,7 @@
   <div class="profile__info container">
     <img
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR0izs3LOSTBZ2VwQw-i2Pv8teSVaPd1SVJQ&usqp=CAU"
-      alt=""
+      alt="Prifle image"
       class="profile__info-avatar"
     />
     <div class="profile__info-data">

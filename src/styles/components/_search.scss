@@ -1,0 +1,22 @@
+.search {
+  position: relative;
+  margin: 20px;
+  @include minWidth($md) {
+    width: 30%;
+    margin-left: 0;
+  }
+  &__icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+  }
+  &__input {
+    padding: 8px 8px 8px 28px;
+    border-radius: 4px;
+    border: 1px solid $pale-grey;
+    display: inline-block;
+    width: 100%;
+  }
+}

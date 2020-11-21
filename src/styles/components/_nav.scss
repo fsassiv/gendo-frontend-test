@@ -1,0 +1,36 @@
+.nav {
+  &__tabs {
+    display: flex;
+    border-bottom: 2px solid $pale-grey;
+  }
+  &__tab {
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+    padding: 10px;
+    border-bottom: 4px solid transparent;
+    transition: all linear 0.25s;
+    @include minWidth($sm) {
+      width: 30%;
+    }
+
+    @include minWidth($md) {
+      width: 20%;
+    }
+
+    &.active,
+    &:hover {
+      border-bottom-color: $rusty-orenge;
+      font-weight: bold;
+      color: $slate-grey-two;
+    }
+    &-counter {
+      margin-left: 4px;
+      display: inline-block;
+      padding: 4px;
+      background-color: $pale-grey;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+  }
+}
