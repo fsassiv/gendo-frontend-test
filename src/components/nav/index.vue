@@ -6,7 +6,7 @@
       :class="currentNavTab === 'repos' && 'active'"
       @click="$emit('handleNavClick', $event.target.id)"
     >
-      Repos<span class="nav__tab-counter">19</span>
+      Repos<span class="nav__tab-counter">{{ reposCount }}</span>
     </button>
     <button
       id="starred"
@@ -14,7 +14,7 @@
       :class="currentNavTab === 'starred' && 'active'"
       @click="$emit('handleNavClick', $event.target.id)"
     >
-      Starred<span class="nav__tab-counter">19</span>
+      Starred<span class="nav__tab-counter">{{ starredReposCount }}</span>
     </button>
   </nav>
 </template>
@@ -26,6 +26,14 @@ export default {
     currentNavTab: {
       type: String,
       default: "repos"
+    },
+    reposCount: {
+      type: Number,
+      default: 0
+    },
+    starredReposCount: {
+      type: Number,
+      default: 0
     }
   },
   emits: ["handleNavClick"]

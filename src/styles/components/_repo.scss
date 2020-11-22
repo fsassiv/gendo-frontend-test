@@ -6,4 +6,27 @@
   @include minWidth($md) {
     padding-left: 0;
   }
+
+  &__title {
+    color: #3397da;
+    font-size: 18px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  &__description {
+    color: $warm-grey;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: 16px;
+    font-size: 12px;
+    &-bar {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
